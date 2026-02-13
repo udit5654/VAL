@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine’s Week 💖</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffd6e8, #fff0f6);
+    text-align: center;
+    color: #5a0033;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 15px;
+    font-size: 2rem;
+}
+
+/* Couple Photo */
+.photo-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Music Button */
+.music-btn {
+    background: #ff4d88;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 15px;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffffcc;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #d63384;
+}
+
+textarea[readonly] {
+    width: 100%;
+    min-height: 220px;   /* 👈 makes it BIG */
+    border-radius: 15px;
+    border: 1px solid #ff99c8;
+    padding: 18px;
+    font-size: 1rem;
+    resize: none;
+    background: #fff0f6;
+    line-height: 1.5;
+}
+
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.nav button {
+    background: #ff4d88;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 22px;
+    animation: floatUp linear infinite;
+    color: #ff4d88;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.heart.pop {
+    transform: scale(1.8);
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>💖 Valentine’s Week With You 💖</h1>
+
+<div class="photo-card">
+    <img src="WhatsApp Image 2026-02-13 at 12.15.12 PM.jpeg" alt="Us ❤️">
+</div>
+
+<button class="music-btn" onclick="playMusic()">🎵 Play Our Song</button>
+
+<audio id="bgMusic" loop>
+    <source src="Perfect-(Mr-Jat.in).mp3" type="audio/mpeg">
+</audio>
+<audio id="popSound" preload="auto">
+    <source src="krnbeatz-bubble-in-water-422579.mp3" type="audio/mpeg">
+</audio>
+<div class="slider">
+    <div class="slides" id="slides">
+
+        <div class="slide"><div class="card">
+            <h2>🌹 Rose Day</h2>
+          <textarea readonly >
+Hii baby, it’s Rose Day 🌹  
+I know it’s already over, but I tried something new.
+
+Happy Rose Day 🌹  
+You are someone for whom I will always push my limits.
+
+I don’t need a special day to love you,
+but today I choose a rose to remind you how special you are 🌹
+</textarea>
+
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>🤗 Propose Day</h2>
+            <textarea readonly>"i guess it too late to propose u again since we are already couple but 
+            DEAR,will u be mine for the coming days"</textarea>
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>🍫 Chocolate Day</h2>
+            <textarea readonly>"Your silk mousse is ready with me since ur village collage doesnt have delevary partner so i will bring it myself ..
+            Chocolate day is ur day anyway so will treat u soon or would u like hehe"</textarea>
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>🧸 Teddy Day</h2>
+            <textarea readonly>"Since u are my Teddy i want u But would u like me as urs HAPPY TEDDy DAY "</textarea>
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>🤝 Promise Day</h2>
+            <textarea readonly>"This day is special so i promise u that i would try everything to make u happy and for us so tht our bond really grow vry strong"</textarea>
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>🤗 Hug Day</h2>
+            <textarea readonly>"a HUG fr u is all i need right now everything is now well for some days sone i want us to calm down with a hug HAPPY HUG DAY "</textarea>
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>💋 Kiss Day</h2>
+            <textarea readonly>"ONE of my fav day meet me sson so tht i can wish u in real"</textarea>
+        </div></div>
+
+        <div class="slide"><div class="card">
+            <h2>❤️ Valentine’s Day</h2>
+            <textarea readonly>"A valentine day it is the day i wished u all the things combine so HAPPY VALENTINE DAY baby i wish we could be toghert to celebrate it but LDR 
+            wont allow us do so so whenever we can we will celebrate it i know its tought to maintain everything with me since i dont understand many things but trust me i will try everypossible 
+            way to make u happy and so that u want more of me I LOVE U DEAR❤️ "</textarea>
+        </div></div>
+
+    </div>
+</div>
+
+<div class="nav">
+    <button onclick="prev()">❮</button>
+    <button onclick="next()">❯</button>
+</div>
+
+<footer>Made with ❤️ just for you</footer>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const total = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function next() {
+    index = (index + 1) % total;
+    updateSlide();
+}
+
+function prev() {
+    index = (index - 1 + total) % total;
+    updateSlide();
+}
+
+function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.volume = 0.5;
+    music.play();
+}
+
+// Floating hearts
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+
+    heart.addEventListener("click", () => {
+        heart.classList.add("pop");
+
+        // NEW audio instance (mobile safe)
+        const pop = new Audio("krnbeatz-bubble-in-water-422579.mp3");
+        pop.volume = 0.6;
+        pop.play();
+
+        setTimeout(() => heart.remove(), 200);
+    });
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        if (heart.parentElement) heart.remove();
+    }, 8000);
+}, 500);
+
+
+</script>
+
+</body>
+</html>
