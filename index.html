@@ -7,15 +7,30 @@
 
 <style>
 * { box-sizing: border-box; }
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Modern browsers */
+}
+
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #ffd6e8, #fff0f6);
     text-align: center;
     color: #5a0033;
     overflow-x: hidden;
+
+    background-image:
+        linear-gradient(to bottom, rgba(255,214,232,0.7), rgba(255,240,246,0.9)),
+        url("background.jpg");   /* 👈 your image */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
+
 
 h1 {
     margin: 15px;
@@ -40,7 +55,7 @@ h1 {
 
 /* Music Button */
 .music-btn {
-    background: #ff4d88;
+    background: #dc5a87;
     color: white;
     border: none;
     padding: 12px 22px;
@@ -64,6 +79,10 @@ h1 {
 .slide {
     min-width: 100%;
     padding: 20px;
+}
+.slider {
+    touch-action: pan-y;
+    user-select: none;
 }
 
 .card {
@@ -89,7 +108,6 @@ textarea[readonly] {
     line-height: 1.5;
 }
 
-}
 
 /* Navigation */
 .nav {
@@ -168,64 +186,41 @@ but today I choose a rose to remind you how special you are 🌹
 
         <div class="slide"><div class="card">
             <h2>🤗 Propose Day</h2>
-            <textarea readonly>I guess its too late to propose you again since we are already couple but.. 
-            DEAR,will you be mine for the coming days 
-                
-                say YES or YES
-                HAPPY PRPOSE DAY🤗
-                "</textarea>
+            <textarea readonly>"i guess it too late to propose u again since we are already couple but 
+            DEAR,will u be mine for the coming days"</textarea>
         </div></div>
 
         <div class="slide"><div class="card">
             <h2>🍫 Chocolate Day</h2>
-            <textarea readonly>Your silk mousse is ready with me since ur village collage doesnt have delivary partner so i will bring it myself ..
-            Chocolate day is ur day anyway so will treat u soon or would u like hehe
-                
-     HAPPY CHOCOALTE DAY BABY🍫
-                "</textarea>
+            <textarea readonly>"Your silk mousse is ready with me since ur village collage doesnt have delevary partner so i will bring it myself ..
+            Chocolate day is ur day anyway so will treat u soon or would u like hehe"</textarea>
         </div></div>
 
         <div class="slide"><div class="card">
             <h2>🧸 Teddy Day</h2>
-            <textarea readonly>Since u are my Teddy i want u But would u like me as urs 
-                
-     HAPPY TEDDy DAY🧸 </textarea>
+            <textarea readonly>"Since u are my Teddy i want u But would u like me as urs HAPPY TEDDy DAY "</textarea>
         </div></div>
 
         <div class="slide"><div class="card">
             <h2>🤝 Promise Day</h2>
-            <textarea readonly>This day is special so i promise u that i would try everything to make u happy and try to make  our bond really grow really strong
-                
-    HAPPY PROMISE DAY🤝
-            </textarea>
+            <textarea readonly>"This day is special so i promise u that i would try everything to make u happy and for us so tht our bond really grow vry strong"</textarea>
         </div></div>
 
         <div class="slide"><div class="card">
             <h2>🤗 Hug Day</h2>
-            <textarea readonly>a HUG fr u is all i need right now everything is not going well for some days soon i want us to calm down with a hug..
-                
-      HAPPY HUG DAY 
-            </textarea>
+            <textarea readonly>"a HUG fr u is all i need right now everything is now well for some days sone i want us to calm down with a hug HAPPY HUG DAY "</textarea>
         </div></div>
 
         <div class="slide"><div class="card">
             <h2>💋 Kiss Day</h2>
-            <textarea readonly>ONE of my fav day of the week meet me soon so tht i can wish u in real
-            
-      HAPPY KISS DAY💋</textarea>
+            <textarea readonly>"ONE of my fav day meet me sson so tht i can wish u in real"</textarea>
         </div></div>
 
         <div class="slide"><div class="card">
             <h2>❤️ Valentine’s Day</h2>
-            <textarea readonly>A valentine day it is the day i wished u all of the days in combine so HAPPY VALENTINE DAY baby i wish we could be together to celebrate it but LDR 
-            wont allow us do so..
-                
-            So whenever we can we will celebrate it i know its tought to maintain everything with me since i dont understand many things but trust me i will try every possible 
-            way to make u happy and so that u want more of me I LOVE U DEAR❤️ 
-
-            Lets hope that we overcome all our difficults toghether and support each other to grow strong 
-            
-      HAPPY VALENTINES DAY ❤️ </textarea>
+            <textarea readonly>"A valentine day it is the day i wished u all the things combine so HAPPY VALENTINE DAY baby i wish we could be toghert to celebrate it but LDR 
+            wont allow us do so so whenever we can we will celebrate it i know its tought to maintain everything with me since i dont understand many things but trust me i will try everypossible 
+            way to make u happy and so that u want more of me I LOVE U DEAR❤️ "</textarea>
         </div></div>
 
     </div>
@@ -294,5 +289,3 @@ setInterval(() => {
 
 </body>
 </html>
-
-
